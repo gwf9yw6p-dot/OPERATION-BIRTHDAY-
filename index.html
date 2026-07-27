@@ -1,1 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Operation: Birthday</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- LOADING SCREEN -->
+<!-- ========================= -->
+
+<section id="loading-screen" class="screen active">
+
+<div class="loading-card">
+
+<h1>OPERATION: BIRTHDAY</h1>
+
+<p class="loading-subtitle">
+
+Initializing Classified Mission...
+
+</p>
+
+<div class="progress-container">
+
+<div id="progress-bar"></div>
+
+</div>
+
+<p id="loading-number">0%</p>
+
+<p class="status-text">
+
+Please wait...
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BRIEFING -->
+<!-- ========================= -->
+
+<section id="briefing" class="screen">
+
+<div class="card">
+
+<h1>
+
+GENERAL KHALIDAH
+
+</h1>
+
+<div class="terminal">
+
+<p>
+
+Basically...
+
+</p>
+
+<p>
+
+Abdul.
+
+</p>
+
+<p>
+
+What we need to do is complete today's mission.
+
+</p>
+
+<p>
+
+Three classified mission dossiers have been prepared.
+
+</p>
+
+<p>
+
+Two security checkpoints remain.
+
+</p>
+
+<p>
+
+One confidential birthday document awaits.
+
+</p>
+
+<p class="warning">
+
+Failure is NOT an option.
+
+</p>
+
+</div>
+
+<button class="next-btn" onclick="showScreen('file1')">
+
+BEGIN MISSION
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DOSSIER ONE -->
+<!-- ========================= -->
+
+<section id="file1" class="screen">
+
+<div class="card">
+
+<h2>
+
+MISSION DOSSIER #01
+
+</h2>
+
+<div class="photo">
+
+<img src="images/photo1.jpg" alt="Photo One">
+
+</div>
+
+<h3>
+
+MISSION NOTE 01
+
+</h3>
+
+<p>
+
+Every mission begins somewhere.
+
+</p>
+
+<button class="next-btn"
+
+onclick="showScreen('file2')">
+
+NEXT DOSSIER
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DOSSIER TWO -->
+<!-- ========================= -->
+
+<section id="file2" class="screen">
+
+<div class="card">
+
+<h2>
+
+MISSION DOSSIER #02
+
+</h2>
+
+<div class="photo">
+
+<img src="images/photo2.jpg"
+
+alt="Photo Two">
+
+</div>
+
+<h3>
+
+MISSION NOTE 02
+
+</h3>
+
+<p>
+
+Some people make life more interesting simply by being themselves.
+
+</p>
+
+<button class="next-btn"
+
+onclick="showScreen('file3')">
+
+NEXT DOSSIER
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DOSSIER THREE -->
+<!-- ========================= -->
+
+<section id="file3" class="screen">
+
+<div class="card">
+
+<h2>
+
+MISSION DOSSIER #03
+
+</h2>
+
+<div class="photo">
+
+<img src="images/photo3.jpg"
+
+alt="Photo Three">
+
+</div>
+
+<h3>
+
+MISSION NOTE 03
+
+</h3>
+
+<p>
+
+This mission has one objective:
+
+Celebrate someone who deserves it.
+
+</p>
+
+<button class="next-btn"
+
+onclick="showScreen('quiz1')">
+
+SECURITY CHECK
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- QUIZ ONE -->
+<!-- ========================= -->
+
+<section id="quiz1" class="screen">
+
+<div class="card">
+
+<h2>
+
+SECURITY CHECKPOINT 01
+
+</h2>
+
+<p>
+
+Which cranial nerve is responsible for vision?
+
+</p>
+
+<div class="answers">
+
+<button onclick="wrongAnswer()">
+
+CN VII
+
+</button>
+
+<button onclick="correctQuizOne()">
+
+CN II (Optic Nerve)
+
+</button>
+
+<button onclick="wrongAnswer()">
+
+CN X
+
+</button>
+
+<button onclick="wrongAnswer()">
+
+CN XII
+
+</button>
+
+</div>
+
+<p id="quiz1-result"></p>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- QUIZ TWO -->
+<!-- ========================= -->
+
+<section id="quiz2" class="screen">
+
+<div class="card">
+
+<h2>
+
+SECURITY CHECKPOINT 02
+
+</h2>
+
+<p>
+
+What word does Abdul say the most?
+
+</p>
+
+<div class="answers">
+
+<button onclick="wrongAnswerTwo()">
+
+Actually
+
+</button>
+
+<button onclick="wrongAnswerTwo()">
+
+Literally
+
+</button>
+
+<button onclick="correctQuizTwo()">
+
+Basically
+
+</button>
+
+<button onclick="wrongAnswerTwo()">
+
+Honestly
+
+</button>
+
+</div>
+
+<p id="quiz2-result"></p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DECRYPTION -->
+<!-- ========================= -->
+
+<section id="decrypt" class="screen">
+
+<div class="card">
+
+<h2>
+
+DECRYPTING CLASSIFIED DOCUMENT
+
+</h2>
+
+<div class="decrypt-box">
+
+<p>
+
+Decrypting...
+
+</p>
+
+<div class="progress-container">
+
+<div id="decrypt-progress"></div>
+
+</div>
+
+<p id="decrypt-percent">
+
+0%
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BIRTHDAY LETTER -->
+<!-- ========================= -->
+
+<section id="letter" class="screen">
+
+<div class="letter-card">
+
+<h1>
+
+CONFIDENTIAL DOCUMENT
+
+</h1>
+
+<h3>
+
+To:
+
+Abdul
+
+</h3>
+
+<p>
+
+[ Write your birthday letter here.
+
+This is where your message will go.
+
+Replace everything inside these brackets with your own words.
+
+You can make it emotional, funny, grateful or however you want.
+
+This section is intentionally left as a placeholder so you can personalize it before sending the website. ]
+
+</p>
+
+<div class="signature">
+
+<p>
+
+— General Khalidah
+
+</p>
+
+<p>
+
+Commander,
+
+Operation: Birthday
+
+</p>
+
+</div>
+
+<button class="next-btn"
+
+onclick="showScreen('complete')">
+
+MISSION COMPLETE
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FINAL SCREEN -->
+<!-- ========================= -->
+
+<section id="complete" class="screen">
+
+<div class="card">
+
+<h1>
+
+MISSION STATUS
+
+</h1>
+
+<h2>
+
+SUCCESS
+
+</h2>
+
+<p>
+
+Objective Completed.
+
+</p>
+
+<p>
+
+Happy Birthday,
+
+Abdul.
+
+</p>
+
+<p>
+
+Thank you for completing
+
+Operation: Birthday.
+
+</p>
+
+<div class="stamp">
+
+MISSION ACCOMPLISHED
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
