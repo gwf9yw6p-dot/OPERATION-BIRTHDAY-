@@ -9,47 +9,71 @@
 
 <title>Operation: Birthday</title>
 
-<link rel="stylesheet" href="style.css">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <!-- ========================= -->
-<!-- LOADING SCREEN -->
+<!-- COVER -->
 <!-- ========================= -->
 
-<section id="loading-screen" class="screen active">
+<section class="screen active" id="cover">
 
-<div class="loading-card">
+<div class="glass-card">
 
-<h1>OPERATION: BIRTHDAY</h1>
+<div class="top-secret">
 
-<p class="loading-subtitle">
-
-Initializing Classified Mission...
-
-</p>
-
-<div class="progress-container">
-
-<div id="progress-bar"></div>
+TOP SECRET
 
 </div>
 
-<p id="loading-number">0%</p>
+<h2 class="small-title">
 
-<p class="status-text">
+MISSION DOSSIER
 
-Please wait...
+</h2>
+
+<h1 class="main-title">
+
+OPERATION:
+
+<span>BIRTHDAY</span>
+
+</h1>
+
+<p class="prepared">
+
+Prepared By
 
 </p>
+
+<h3 class="general">
+
+GENERAL KHALIDAH
+
+</h3>
+
+<button class="primary-btn"
+
+onclick="nextScreen('briefing')">
+
+OPEN FILE
+
+</button>
+
+<div class="progress">
+
+● ○ ○ ○ ○ ○ ○ ○ ○
+
+</div>
 
 </div>
 
@@ -59,17 +83,19 @@ Please wait...
 <!-- BRIEFING -->
 <!-- ========================= -->
 
-<section id="briefing" class="screen">
+<section class="screen"
 
-<div class="card">
+id="briefing">
 
-<h1>
+<div class="glass-card">
 
-GENERAL KHALIDAH
+<h2>
 
-</h1>
+MISSION BRIEF
 
-<div class="terminal">
+</h2>
+
+<div class="brief-text">
 
 <p>
 
@@ -85,13 +111,19 @@ Abdul.
 
 <p>
 
-What we need to do is complete today's mission.
+Today's objective is simple.
 
 </p>
 
 <p>
 
-Three classified mission dossiers have been prepared.
+Celebrate another successful year.
+
+</p>
+
+<p>
+
+Three mission files have been prepared.
 
 </p>
 
@@ -103,250 +135,275 @@ Two security checkpoints remain.
 
 <p>
 
-One confidential birthday document awaits.
+One classified document awaits.
 
 </p>
 
 <p class="warning">
 
-Failure is NOT an option.
+Failure is not an option.
 
 </p>
 
 </div>
 
-<button class="next-btn" onclick="showScreen('file1')">
+<button class="primary-btn"
 
-BEGIN MISSION
+onclick="nextScreen('photo1')">
+
+ACCEPT MISSION
 
 </button>
+
+<div class="progress">
+
+● ● ○ ○ ○ ○ ○ ○ ○
+
+</div>
 
 </div>
 
 </section>
 
 <!-- ========================= -->
-<!-- DOSSIER ONE -->
+<!-- PHOTO ONE -->
 <!-- ========================= -->
 
-<section id="file1" class="screen">
+<section class="screen"
 
-<div class="card">
+id="photo1">
 
-<h2>
+<div class="glass-card">
 
-MISSION DOSSIER #01
+<div class="photo-paper">
 
-</h2>
+<img src="PHOTO-2026-07-09-12-37-27.JPG"
 
-<div class="photo">
-
-<img src="PHOTO-2026-07-09-12-37-27.JPG" alt="Mission Photo One">
+alt="Photo One">
 
 </div>
 
-<h3>
+<h2>
 
-MISSION NOTE 01
+MISSION LOG 01
 
-</h3>
+</h2>
 
-<p>
+<p class="caption">
 
 Every mission begins somewhere.
 
 </p>
 
-<button class="next-btn"
+<button class="primary-btn"
 
-onclick="showScreen('file2')">
+onclick="nextScreen('photo2')">
 
-NEXT DOSSIER
+NEXT FILE →
 
 </button>
+
+<div class="progress">
+
+● ● ● ○ ○ ○ ○ ○ ○
+
+</div>
 
 </div>
 
 </section>
-
 <!-- ========================= -->
-<!-- DOSSIER TWO -->
+<!-- PHOTO TWO -->
 <!-- ========================= -->
 
-<section id="file2" class="screen">
+<section class="screen"
 
-<div class="card">
+id="photo2">
 
-<h2>
+<div class="glass-card">
 
-MISSION DOSSIER #02
+<div class="photo-paper">
 
-</h2>
-
-<div class="photo">
-
-<img src="PHOTO-2026-07-09-12-37-29%202.JPG" alt="Mission Photo Two">
+<img src="PHOTO-2026-07-09-12-37-29%202.JPG"
 
 alt="Photo Two">
 
 </div>
 
-<h3>
+<h2>
 
-MISSION NOTE 02
+MISSION LOG 02
 
-</h3>
+</h2>
 
-<p>
+<p class="caption">
 
-Some people make life more interesting simply by being themselves.
+Some people quietly become some of the best parts of life.
 
 </p>
 
-<button class="next-btn"
+<button class="primary-btn"
 
-onclick="showScreen('file3')">
+onclick="nextScreen('photo3')">
 
-NEXT DOSSIER
+NEXT FILE →
 
 </button>
+
+<div class="progress">
+
+● ● ● ● ○ ○ ○ ○ ○
+
+</div>
 
 </div>
 
 </section>
 
 <!-- ========================= -->
-<!-- DOSSIER THREE -->
+<!-- PHOTO THREE -->
 <!-- ========================= -->
 
-<section id="file3" class="screen">
+<section class="screen"
 
-<div class="card">
+id="photo3">
 
-<h2>
+<div class="glass-card">
 
-MISSION DOSSIER #03
+<div class="photo-paper">
 
-</h2>
-
-<div class="photo">
-
-<img src="PHOTO-2026-07-09-12-37-29.JPG" alt="Mission Photo Three">
+<img src="PHOTO-2026-07-09-12-37-29.JPG"
 
 alt="Photo Three">
 
 </div>
 
-<h3>
+<h2>
 
-MISSION NOTE 03
+MISSION LOG 03
 
-</h3>
+</h2>
 
-<p>
+<p class="caption">
 
-This mission has one objective:
+Today's mission has one objective:
 
-Celebrate someone who deserves it.
+Celebrate Abdul.
 
 </p>
 
-<button class="next-btn"
+<button class="primary-btn"
 
-onclick="showScreen('quiz1')">
+onclick="nextScreen('quiz1')">
 
-SECURITY CHECK
+SECURITY CHECK →
 
 </button>
+
+<div class="progress">
+
+● ● ● ● ● ○ ○ ○ ○
+
+</div>
 
 </div>
 
 </section>
 
 <!-- ========================= -->
-<!-- QUIZ ONE -->
+<!-- SECURITY CHECK 01 -->
 <!-- ========================= -->
 
-<section id="quiz1" class="screen">
+<section class="screen"
 
-<div class="card">
+id="quiz1">
+
+<div class="glass-card">
 
 <h2>
 
-SECURITY CHECKPOINT 01
+SECURITY CHECKPOINT
 
 </h2>
 
-<p>
+<p class="question">
 
 Which cranial nerve is responsible for vision?
 
 </p>
 
-<div class="answers">
+<div class="options">
 
-<button onclick="wrongAnswer()">
+<button onclick="wrongQuizOne()">
 
-CN VII
+CN VII — Facial
 
 </button>
 
 <button onclick="correctQuizOne()">
 
-CN II (Optic Nerve)
+CN II — Optic
 
 </button>
 
-<button onclick="wrongAnswer()">
+<button onclick="wrongQuizOne()">
 
-CN X
+CN X — Vagus
 
 </button>
 
-<button onclick="wrongAnswer()">
+<button onclick="wrongQuizOne()">
 
-CN XII
+CN XII — Hypoglossal
 
 </button>
 
 </div>
 
-<p id="quiz1-result"></p>
+<p id="quizOneResult"></p>
+
+<div class="progress">
+
+● ● ● ● ● ● ○ ○ ○
+
+</div>
 
 </div>
 
 </section>
 <!-- ========================= -->
-<!-- QUIZ TWO -->
+<!-- SECURITY CHECK 02 -->
 <!-- ========================= -->
 
-<section id="quiz2" class="screen">
+<section class="screen"
 
-<div class="card">
+id="quiz2">
+
+<div class="glass-card">
 
 <h2>
 
-SECURITY CHECKPOINT 02
+IDENTITY VERIFICATION
 
 </h2>
 
-<p>
+<p class="question">
 
-What word does Abdul say the most?
+Which word does Abdul say the most?
 
 </p>
 
-<div class="answers">
+<div class="options">
 
-<button onclick="wrongAnswerTwo()">
+<button onclick="wrongQuizTwo()">
 
 Actually
 
 </button>
 
-<button onclick="wrongAnswerTwo()">
+<button onclick="wrongQuizTwo()">
 
-Literally
+Honestly
 
 </button>
 
@@ -356,53 +413,65 @@ Basically
 
 </button>
 
-<button onclick="wrongAnswerTwo()">
+<button onclick="wrongQuizTwo()">
 
-Honestly
+Literally
 
 </button>
 
 </div>
 
-<p id="quiz2-result"></p>
+<p id="quizTwoResult"></p>
+
+<div class="progress">
+
+● ● ● ● ● ● ● ○ ○
+
+</div>
 
 </div>
 
 </section>
 
 <!-- ========================= -->
-<!-- DECRYPTION -->
+<!-- ACCESS GRANTED -->
 <!-- ========================= -->
 
-<section id="decrypt" class="screen">
+<section class="screen"
 
-<div class="card">
+id="access">
+
+<div class="glass-card">
 
 <h2>
 
-DECRYPTING CLASSIFIED DOCUMENT
+ACCESS GRANTED
 
 </h2>
 
-<div class="decrypt-box">
+<p class="caption">
 
-<p>
-
-Decrypting...
+Identity verified successfully.
 
 </p>
 
-<div class="progress-container">
+<p class="caption">
 
-<div id="decrypt-progress"></div>
-
-</div>
-
-<p id="decrypt-percent">
-
-0%
+Opening classified birthday document...
 
 </p>
+
+<button class="primary-btn"
+
+onclick="nextScreen('letter')">
+
+OPEN DOCUMENT
+
+</button>
+
+<div class="progress">
+
+● ● ● ● ● ● ● ● ○
 
 </div>
 
@@ -411,118 +480,147 @@ Decrypting...
 </section>
 
 <!-- ========================= -->
-<!-- BIRTHDAY LETTER -->
+<!-- LETTER -->
 <!-- ========================= -->
 
-<section id="letter" class="screen">
+<section class="screen"
+
+id="letter">
 
 <div class="letter-card">
 
-<h1>
+<div class="classified-stamp">
 
-CONFIDENTIAL DOCUMENT
+CONFIDENTIAL
 
-</h1>
+</div>
 
-<h3>
+<h2>
 
 To:
 
 Abdul
 
-</h3>
+</h2>
 
-<p>
+<p class="letter-text">
 
-[ Write your birthday letter here.
+Replace this entire paragraph with your birthday letter.
 
-This is where your message will go.
+Tell him what he means to you, thank him for the memories, wish him success, make dua for him, and write everything you want him to read on his birthday.
 
-Replace everything inside these brackets with your own words.
-
-You can make it emotional, funny, grateful or however you want.
-
-This section is intentionally left as a placeholder so you can personalize it before sending the website. ]
+This part is completely yours.
 
 </p>
 
-<div class="signature">
+<button class="primary-btn"
 
-<p>
+onclick="nextScreen('finish')">
 
-— General Khalidah
-
-</p>
-
-<p>
-
-Commander,
-
-Operation: Birthday
-
-</p>
-
-</div>
-
-<button class="next-btn"
-
-onclick="showScreen('complete')">
-
-MISSION COMPLETE
+COMPLETE MISSION
 
 </button>
+
+<div class="progress">
+
+● ● ● ● ● ● ● ● ●
+
+</div>
 
 </div>
 
 </section>
-
-<!-- ========================= -->
+  <!-- ========================= -->
 <!-- FINAL SCREEN -->
 <!-- ========================= -->
 
-<section id="complete" class="screen">
+<section class="screen"
 
-<div class="card">
+id="finish">
+
+<div class="glass-card final-card">
+
+<div class="success-icon">
+
+✓
+
+</div>
 
 <h1>
 
-MISSION STATUS
+MISSION
+
+ACCOMPLISHED
 
 </h1>
 
-<h2>
+<p class="final-text">
 
-SUCCESS
-
-</h2>
-
-<p>
-
-Objective Completed.
+Congratulations, Agent Abdul.
 
 </p>
 
-<p>
+<p class="final-text">
 
-Happy Birthday,
-
-Abdul.
-
-</p>
-
-<p>
-
-Thank you for completing
+You have successfully completed
 
 Operation: Birthday.
 
 </p>
 
-<div class="stamp">
+<p class="final-text">
 
-MISSION ACCOMPLISHED
+Your kindness,
 
-</div>
+your friendship,
+
+and your ability to make ordinary moments memorable
+
+have officially been recognised.
+
+</p>
+
+<p class="final-text">
+
+On behalf of
+
+General Khalidah,
+
+thank you for making this mission worth creating.
+
+</p>
+
+<h2 class="birthday">
+
+HAPPY BIRTHDAY,
+
+ABDUL.
+
+</h2>
+
+<p class="wish">
+
+May Allah bless you with happiness,
+
+good health,
+
+success,
+
+peace,
+
+and countless beautiful memories.
+
+Ameen.
+
+</p>
+
+<button class="primary-btn"
+
+onclick="location.reload()">
+
+RESTART MISSION
+
+</button>
 
 </div>
 
