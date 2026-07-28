@@ -27,7 +27,7 @@ let progress=0;
 
 const progressBar=document.getElementById("progress-bar");
 
-const progressText=document.getElementById("progress-text");
+const progressText=document.getElementById("loading-number");
 
 const loading=setInterval(()=>{
 
