@@ -86,8 +86,8 @@ line.style.opacity="1";
 // =====================================
 
 function wrongQuizOne(){
-
-document.getElementById("quiz1-message").innerHTML=
+ 
+document.getElementById("quiz1-result").innerHTML=
 
 "❌ Access Denied.<br>Incorrect medical clearance.";
 
@@ -95,7 +95,7 @@ document.getElementById("quiz1-message").innerHTML=
 
 function correctQuizOne(){
 
-document.getElementById("quiz1-message").innerHTML=
+document.getElementById("quiz1-result").innerHTML=
 
 "✅ Medical knowledge verified.<br>Proceeding to identity verification...";
 
@@ -113,7 +113,7 @@ showScreen("quiz2");
 
 function wrongQuizTwo(){
 
-document.getElementById("quiz2-message").innerHTML=
+document.getElementById("quiz2-result").innerHTML=
 
 "❌ Voice profile mismatch.<br>Try again.";
 
@@ -121,7 +121,7 @@ document.getElementById("quiz2-message").innerHTML=
 
 function correctQuizTwo(){
 
-document.getElementById("quiz2-message").innerHTML=
+document.getElementById("quiz2-result").innerHTML=
 
 "✅ Voice profile matched.<br><br>Frequently Used Expression Detected:<br><strong>\"Basically\"</strong>";
 
